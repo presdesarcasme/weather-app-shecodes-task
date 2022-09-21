@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌧WeatherApp🌩</title>
+    <link rel="icon" href="images/cloud-sun-fill.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/54130d9fbe.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">🌧WeatherApp🌩</h1>
+        <h2 id="current-date"></h2>
+
+        <form id="change-city-form">
+            <div class="row">
+                <div class="col-6 align-self-center">
+                    <input type="search" class="form-control search" placeholder="Please enter your city here"
+                        id="input-city" autocomplete="off" />
+                </div>
+                <div class="col-6 align-self-center">
+                    <button type="button" class="btn btn-outline-dark change-city" id="search-city-button">
+                        Search
+                    </button>
+                    <button type="button" class="btn btn-outline-dark change-city" id="current-location-button">
+                        🏠
+                    </button>
+                </div>
+            </div>
+        </form>
+        <div>
+            <h3 id="city"></h3>
+            <div class="row justify-content-md-center current-weather align-items-center">
+                <div class="col-4 main-temperature">
+                    <span id="temp"></span>
+                    <a href="#" class="active" id="celsius">°C</a>|<a href="#" id="fahrenheit">°F</a>
+                </div>
+                <div class="col-4">
+                    <img src="" alt="" class="main-icon" id="icon" />
+                </div>
+                <div class="col-4" id="weather-sky"></div>
+                <div class="row current-conditions" id="conditions-now">
+                    <div class="col-6 text-start" id="min-max">
+                        <div>
+                            <i class="bi bi-thermometer-high"></i>
+                            <span id="temp-max"></span>°C
+                        </div>
+                        <div>
+                            <i class="bi bi-thermometer-low"></i>
+                            <span id="temp-min"></span>°C
+                        </div>
+                    </div>
+                    <div class="col-6 text-end wind">
+                        <div>Wind: <span id="wind-speed"></span> m/s <i class="bi bi-wind"></i></div>
+                    </div>
+                    <div class="col-6 text-end humidity">
+                        <div>Humidity: <span id="humidity"></span> % <i class="bi bi-moisture"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="forecast"></div>
+
+    </div>
+    <footer class="footer">
+        This project is
+        <a href="" class="git-hub" target="_blank" rel="noopener noreferrer"> open-sourced </a>
+        and hosted on
+        <a href="  " target="_blank" class="netlify" rel="noopener noreferrer"> Netlify </a>
+        ⚡ Coded by
+        <a href="https://www.linkedin.com/in/anastasiia-lykhohrai-020ba7172/" class="author" target="_blank"
+            rel="noopener noreferrer"> Anastasiia Lykhohrai </a>
+
+    </footer>
+    <script src="src/script.js"></script>
+</body>
+
+</html>
