@@ -5,6 +5,15 @@ body {
   font-family: "Comfortaa", cursive;
 }
 
+@media only screen and (max-width: 600px) {
+  #input-city{
+    width: 250px;
+    
+  #search-city-button{
+    display:block!important;
+    margin:0 auto!important;
+}
+
 h1 {
   text-align: center;
   margin-top: 20px;
