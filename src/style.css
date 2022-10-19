@@ -5,6 +5,7 @@ body {
   font-family: "Comfortaa", cursive;
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 600px) {
   #input-city {
   display:none!important;
@@ -25,6 +26,8 @@ body {
 }
 }
 
+=======
+>>>>>>> parent of 74ab36b (Changes for mobile mood search button+inputcity)
 h1 {
   text-align: center;
   margin-top: 20px;
