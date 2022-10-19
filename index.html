@@ -34,7 +34,7 @@
                     <button type="button" class="btn btn-outline-dark change-city" id="search-city-button">
                         Search
                     </button>
-                    <button type="button" class="btn btn-outline-dark change-city row justify-content-sm-center" id="current-location-button">
+                    <button type="button" class="btn btn-outline-dark change-city" id="current-location-button">
                         🏠
                     </button>
                 </div>
@@ -50,22 +50,22 @@
                 <div class="col-4">
                     <img src="" alt="" class="main-icon" id="icon" />
                 </div>
-                <div class="col-4 d-none d-lg-block" id="weather-sky"></div>
-                <div class="row current-conditions d-none d-lg-block" id="conditions-now">
+                <div class="col-4" id="weather-sky"></div>
+                <div class="row current-conditions" id="conditions-now">
                     <div class="col-6 text-start" id="min-max">
-                        <div class="d-none d-lg-block">
+                        <div>
                             <i class="bi bi-thermometer-high"></i>
                             <span id="temp-max"></span>°C
                         </div>
-                        <div class="d-none d-lg-block">
+                        <div>
                             <i class="bi bi-thermometer-low"></i>
                             <span id="temp-min"></span>°C
                         </div>
                     </div>
-                    <div class="col-6 text-end wind d-none d-lg-block">
+                    <div class="col-6 text-end wind">
                         <div>Wind: <span id="wind-speed"></span> m/s <i class="bi bi-wind"></i></div>
                     </div>
-                    <div class="col-6 text-end humidity d-none d-lg-block">
+                    <div class="col-6 text-end humidity">
                         <div>Humidity: <span id="humidity"></span> % <i class="bi bi-moisture"></i></div>
                     </div>
                 </div>
