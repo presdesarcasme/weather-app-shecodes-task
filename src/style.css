@@ -5,25 +5,6 @@ body {
   font-family: "Comfortaa", cursive;
 }
 
-@media only screen and (max-width: 600px) {
-  #input-city {
-  display:none!important;
-}
-  #search-city-button {
-  display:none!important;
-}
-
-#current-location-button {
-  position: relative;
-  width: 50px;
-  left: 85px;
-}
-  #current-location-button {
-  display: block;
-  margin: 0;
-  text-alight:center;
-}
-}
 
 h1 {
   text-align: center;
