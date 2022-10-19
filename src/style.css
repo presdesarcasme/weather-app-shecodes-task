@@ -8,10 +8,6 @@ body {
 @media only screen and (max-width: 600px) {
   #input-city{
     width: 250px;
-    
-  #search-city-button{
-    display:block!important;
-    margin:0 auto!important;
 }
 
 h1 {
