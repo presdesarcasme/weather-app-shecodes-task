@@ -18,6 +18,11 @@ body {
   width: 50px;
   left: 85px;
 }
+  #current-location-button {
+  display: block;
+  margin: 0;
+  text-alight:center;
+}
 }
 
 h1 {
